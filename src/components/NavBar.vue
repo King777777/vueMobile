@@ -11,7 +11,7 @@ const { t } = useI18n()
  */
 const title = computed(() => {
   if (route.name) {
-    return t(`navbar.${route.name}`)
+    return `${t(`navbar.${route.name}`)}`
   }
 
   return t('navbar.Undefined')

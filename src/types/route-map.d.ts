@@ -73,6 +73,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    'LoanApproval': RouteRecordInfo<
+      'LoanApproval',
+      '/loan-approval',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     'Login': RouteRecordInfo<
       'Login',
       '/login',
@@ -168,6 +175,12 @@ declare module 'vue-router/auto-routes' {
     'src/pages/keepalive/index.vue': {
       routes:
         | 'KeepAlive'
+      views:
+        | never
+    }
+    'src/pages/loan-approval/index.vue': {
+      routes:
+        | 'LoanApproval'
       views:
         | never
     }
